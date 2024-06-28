@@ -15,14 +15,14 @@
     <!-- Make it responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <%= render "shared/cdn_assets" %>
+    <%= render partial: "shared/cdn_assets" %>
 
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
+    <%= render partial: "shared/navbar" %>
     <div class="container mt-3">
-      <%- render "shared/flash_messages"%>
+      <%= render partial: "shared/flash_messages"%>
       
       <%= yield %>
     </div>
